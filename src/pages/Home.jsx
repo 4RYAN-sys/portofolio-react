@@ -18,10 +18,9 @@ export default function Home() {
         transition={{ delay: 0.5 }}
       >
         Welcome to my portofolio website.
-          <p>Ini adalah halaman Home saya.</p>
-      <p>Di sini Anda bisa menemukan informasi tentang saya.</p>
-      <p>Silakan jelajahi halaman lain untuk mengetahui lebih banyak tentang saya.</p>
-      <p>Semoga Anda menikmati kunjungan Anda!</p>
+      Di sini Anda bisa menemukan informasi tentang saya.
+      Silakan jelajahi halaman lain untuk mengetahui lebih banyak tentang saya.
+      Semoga Anda menikmati kunjungan Anda!
       </motion.p>
 
     </div>
