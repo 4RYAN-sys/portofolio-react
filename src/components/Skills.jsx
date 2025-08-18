@@ -1,6 +1,7 @@
 import "../styles/Skills.css";
 import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava } from "react-icons/fa";
-import { SiJavascript, SiVite, SiCsharp, SiFigma, SiCanva, SiVercel, SiGithub, SiGitlab, SiNetlify } from "react-icons/si";
+import { SiJavascript, SiVite, SiFigma, SiCanva, SiVercel, SiGithub, SiGitlab, SiNetlify } from "react-icons/si";
+import { SiCsharp } from "react-icons/si";
 
 export default function Skills() {
   return (
