@@ -31,7 +31,7 @@ export default function About() {
           animate={{ opacity: 1 }}
           transition={{ delay: 0.7, duration: 0.5 }}
         >
-          Beberapa hal tentang saya, saya suka nonton filem, main game, dan dengar musik.
+          Beberapa hal tentang saya, saya suka nonton filem, main game, dan dengar musik. Jangan Lupa Nafas.
         </motion.p>
 
         <motion.p
