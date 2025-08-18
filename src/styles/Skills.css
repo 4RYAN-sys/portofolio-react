@@ -1,37 +1,40 @@
 .skills {
-  width: 100%;
+  text-align: center;
+  padding: 2rem;
 }
 
-.skill-bar {
-  margin: 12px 0;
+.skills h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #00f5ff; /* neon vibes */
 }
 
-.skill-label {
-  margin-bottom: 5px;
-  font-size: 14px;
+.skills p {
   color: #ccc;
+  margin-bottom: 2rem;
 }
 
-.skill-progress {
-  position: relative;
-  height: 10px;
-  width: 100%;
-  background: rgba(255, 255, 255, 0.1);
-  border-radius: 12px;
-  overflow: hidden;
+.skills-icons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 2rem;
+  justify-items: center;
 }
 
-.skill-progress span {
-  display: block;
-  height: 100%;
-  border-radius: 12px;
-  background: linear-gradient(90deg, #7b2ff7, #00c6ff);
-  box-shadow: 0 0 15px rgba(0, 198, 255, 0.5);
-  animation: grow 1.5s ease forwards;
+.skill-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: transform 0.3s ease, filter 0.3s ease;
 }
 
-@keyframes grow {
-  from {
-    width: 0%;
-  }
+.skill-item:hover {
+  transform: scale(1.2);
+  filter: drop-shadow(0 0 10px #00f5ff);
+}
+
+.skill-item p {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: white;
 }
