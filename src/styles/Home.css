@@ -1,0 +1,20 @@
+.page.home {
+  text-align: center;
+  color: #e0e0ff;
+  padding: 4rem 2rem;
+}
+
+.page.home h1 {
+  font-size: 3rem;
+  background: linear-gradient(90deg, #00c6ff, #7b2ff7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  text-shadow: 0 0 20px rgba(123, 47, 247, 0.6);
+}
+
+.page.home p {
+  margin: 10px 0;
+  font-size: 1.2rem;
+  opacity: 0.9;
+}

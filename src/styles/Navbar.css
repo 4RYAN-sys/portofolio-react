@@ -1,0 +1,26 @@
+.navbar {
+  display: flex;
+  gap: 15px;
+  padding: 15px 25px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.4);
+}
+
+.navbar button {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  border-radius: 12px;
+  font-weight: 600;
+  cursor: pointer;
+  color: #fff;
+  background: linear-gradient(90deg, #7b2ff7, #00c6ff);
+  transition: all 0.3s ease;
+}
+
+.navbar button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 20px #00c6ff, 0 0 30px #7b2ff7;
+}
