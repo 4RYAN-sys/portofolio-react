@@ -47,3 +47,36 @@
   line-height: 1.6;
   color: #cfcfcf;
 }
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center; /* biar card ke tengah */
+  align-items: center;
+  background: #0a0a0a;
+  font-family: 'Orbitron', sans-serif;
+}
+
+/* CARD */
+.card {
+  background: rgba(20, 20, 20, 0.9);
+  border-radius: 16px;
+  padding: 2rem;
+  max-width: 800px;   /* batasi lebar card */
+  width: 90%;         /* biar responsif */
+  text-align: center;
+  box-shadow: 0 0 20px rgba(95, 91, 255, 0.4);
+  border: 1px solid rgba(95, 91, 255, 0.2);
+}
+
+.card h1 {
+  font-size: 2.5rem;
+  color: #5f5bff;
+  text-shadow: 0 0 10px #5f5bff;
+  margin-bottom: 1rem;
+}
+
+.card p {
+  font-size: 1.1rem;
+  color: #cfcfcf;
+  line-height: 1.6;
+}
