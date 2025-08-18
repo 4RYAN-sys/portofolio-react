@@ -1,28 +1,35 @@
 import "../styles/Skills.css";
-import { FaReact, FaHtml5, FaCss3Alt, FaGitAlt, FaJava } from "react-icons/fa";
-import { SiJavascript, SiVite, SiFigma, SiCanva, SiVercel, SiGithub, SiGitlab, SiNetlify } from "react-icons/si";
-import { SiDotnet} from "react-icons/si";
+import { FaReact, FaJava, FaGitAlt, FaGithub, FaGitlab } from "react-icons/fa";
+import { SiVite, SiJavascript, SiHtml5, SiCss3, SiDotnet, SiCanva, SiFigma, SiVercel, SiNetlify } from "react-icons/si";
 
 export default function Skills() {
+  const skills = [
+    { name: "React", icon: <FaReact color="#61DBFB" /> },
+    { name: "Vite", icon: <SiVite color="#BD34FE" /> },
+    { name: "JavaScript", icon: <SiJavascript color="#F7DF1E" /> },
+    { name: "HTML", icon: <SiHtml5 color="#E34F26" /> },
+    { name: "CSS", icon: <SiCss3 color="#1572B6" /> },
+    { name: "Git", icon: <FaGitAlt color="#F1502F" /> },
+    { name: "C#", icon: <SiDotnet color="#239120" /> },
+    { name: "Java", icon: <FaJava color="#E76F00" /> },
+    { name: "Canva", icon: <SiCanva color="#00C4CC" /> },
+    { name: "Figma", icon: <SiFigma color="#F24E1E" /> },
+    { name: "Vercel", icon: <SiVercel color="#fff" /> },
+    { name: "GitHub", icon: <FaGithub color="#fff" /> },
+    { name: "GitLab", icon: <FaGitlab color="#FC6D26" /> },
+    { name: "Netlify", icon: <SiNetlify color="#00C7B7" /> },
+  ];
+
   return (
-    <div className="page skills">
-      <h1>💻 Tech Stack</h1>
-      <p>Bahasa pemrograman & tools yang pernah saya pelajari:</p>
-      <div className="skills-icons">
-        <div className="skill-item"><FaHtml5 color="#e34f26" size={50}/> <p>HTML5</p></div>
-        <div className="skill-item"><FaCss3Alt color="#1572b6" size={50}/> <p>CSS3</p></div>
-        <div className="skill-item"><SiJavascript color="#f7df1e" size={50}/> <p>JavaScript</p></div>
-        <div className="skill-item"><FaReact color="#61dafb" size={50}/> <p>React</p></div>
-        <div className="skill-item"><SiVite color="#646cff" size={50}/> <p>Vite</p></div>
-        <div className="skill-item"><FaGitAlt color="#f34f29" size={50}/> <p>Git</p></div>
-        <div className="skill-item"><SiDotnet color="#9b4f96" size={50}/> <p>C#</p></div>
-        <div className="skill-item"><FaJava color="#f89820" size={50}/> <p>Java</p></div>
-        <div className="skill-item"><SiCanva color="#00c4cc" size={50}/> <p>Canva</p></div>
-        <div className="skill-item"><SiFigma color="#f24e1e" size={50}/> <p>Figma</p></div>
-        <div className="skill-item"><SiVercel color="#000000" size={50}/> <p>Vercel</p></div>
-        <div className="skill-item"><SiGithub color="#ffffff" size={50}/> <p>GitHub</p></div>
-        <div className="skill-item"><SiGitlab color="#fc6d26" size={50}/> <p>GitLab</p></div>
-        <div className="skill-item"><SiNetlify color="#00c7b7" size={50}/> <p>Netlify</p></div>
+    <div className="skills-container">
+      <h1 className="skills-title">MY SKILLS</h1>
+      <div className="skills-grid">
+        {skills.map((skill, index) => (
+          <div key={index} className="skill-card">
+            <div style={{ fontSize: "2rem" }}>{skill.icon}</div>
+            <p>{skill.name}</p>
+          </div>
+        ))}
       </div>
     </div>
   );
