@@ -1,3 +1,10 @@
+.page {
+  background-color: #0a0a0a; /* hitam gelap */
+  min-height: 100vh;
+  color: white;
+  padding: 2rem;
+}
+
 .skills {
   text-align: center;
   padding: 2rem;
