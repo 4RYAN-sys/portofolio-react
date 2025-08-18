@@ -3,13 +3,42 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background: #0a0a0a;
+  background: radial-gradient(circle at top, #0a0a0a, #050505 80%);
   font-family: 'Orbitron', sans-serif;
   padding: 2rem;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Bikin efek glowing partikel di belakang */
+.page::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 200%;
+  height: 200%;
+  background: 
+    radial-gradient(circle, rgba(0, 200, 255, 0.3) 1px, transparent 1px),
+    radial-gradient(circle, rgba(95, 91, 255, 0.3) 1px, transparent 1px);
+  background-size: 80px 80px, 120px 120px;
+  animation: moveBackground 20s linear infinite;
+  z-index: 0;
+  opacity: 0.4;
+}
+
+@keyframes moveBackground {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(-100px, -100px);
+  }
 }
 
 .card {
-  background: rgba(25, 25, 25, 0.9);
+  position: relative;
+  background: rgba(20, 20, 20, 0.85);
   border-radius: 16px;
   padding: 2rem 3rem;
   max-width: 900px;
@@ -18,24 +47,5 @@
   text-align: center;
   box-shadow: 0 0 20px rgba(0, 200, 255, 0.4);
   border: 1px solid rgba(0, 200, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(0, 200, 255, 0.6);
-}
-
-.card h1 {
-  font-size: 2.5rem;
-  color: #00c8ff;
-  text-shadow: 0 0 10px #00c8ff;
-  margin-bottom: 1.5rem;
-}
-
-.card p {
-  font-size: 1.1rem;
-  color: #d0d0d0;
-  line-height: 1.6;
-  margin-bottom: 0.8rem;
+  z-index: 1; /* biar di atas background glowing */
 }
