@@ -1,82 +1,41 @@
-.page.home {
-  text-align: center;
-  color: #e0e0ff;
-  padding: 4rem 2rem;
-}
-
-.page.home h1 {
-  font-size: 3rem;
-  background: linear-gradient(90deg, #00c6ff, #7b2ff7);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-  text-shadow: 0 0 20px rgba(123, 47, 247, 0.6);
-}
-
-.page.home p {
-  margin: 10px 0;
-  font-size: 1.2rem;
-  opacity: 0.9;
-}
 .page {
-  background-color: #0a0a0a; /* biar tetep gelap */
   min-height: 100vh;
   display: flex;
-  flex-direction: column;
-  align-items: center; /* biar konten ke tengah */
   justify-content: center;
-  padding: 2rem;
-  font-family: 'Orbitron', sans-serif;
-}
-
-/* batasi lebar konten */
-.page-content {
-  max-width: 800px; /* biar ga melebar sampe pinggir */
-  text-align: center; /* biar lebih estetik */
-}
-
-.page h1 {
-  font-size: 2.5rem;
-  color: #5f5bff;
-  text-shadow: 0 0 12px #5f5bff;
-  margin-bottom: 1rem;
-}
-
-.page p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #cfcfcf;
-}
-.page {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center; /* biar card ke tengah */
   align-items: center;
   background: #0a0a0a;
   font-family: 'Orbitron', sans-serif;
+  padding: 2rem;
 }
 
-/* CARD */
 .card {
   background: rgba(20, 20, 20, 0.9);
   border-radius: 16px;
-  padding: 2rem;
-  max-width: 800px;   /* batasi lebar card */
-  width: 90%;         /* biar responsif */
+  padding: 2rem 3rem;
+  max-width: 900px;
+  width: fit-content;
+  min-width: 350px;
   text-align: center;
   box-shadow: 0 0 20px rgba(95, 91, 255, 0.4);
   border: 1px solid rgba(95, 91, 255, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 0 30px rgba(95, 91, 255, 0.6);
 }
 
 .card h1 {
   font-size: 2.5rem;
   color: #5f5bff;
   text-shadow: 0 0 10px #5f5bff;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .card p {
   font-size: 1.1rem;
   color: #cfcfcf;
   line-height: 1.6;
+  margin-bottom: 0.8rem;
 }
