@@ -2,7 +2,7 @@ import React from 'react'
 import '../styles/Skills.css'
 
 export default function Skills(){
-  const skills = ['React','JavaScript','C#','Unity','UI/UX','Git','SQL','Design Patterns']
+  const skills = ['React','JavaScript','C#','Unity','UI/UX','Git','Github','Canva', 'Figma', 'Html', 'Css', 'vite', 'Node.js', ]
   return (
     <div className="skills card">
       <h3>Skills</h3>
