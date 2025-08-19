@@ -10,7 +10,7 @@ body {
   background: linear-gradient(135deg, #0a0a23, #050517);
   color: #fff;
   min-height: 100vh;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: flex-start;
   padding: 30px;
