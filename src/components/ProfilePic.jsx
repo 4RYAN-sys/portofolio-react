@@ -1,13 +1,11 @@
-import React from "react";
-import "../styles/ProfilePic.css";
-import profile from "../assets/images/pp.jpeg";
+import React from 'react'
+import pp from '../assets/images/pp.jpeg'
+import '../styles/ProfilePic.css'
 
-const ProfilePic = () => {
+export default function ProfilePic({size='120px'}){
   return (
-    <div className="profile-pic">
-      <img src={profile} alt="profile" />
+    <div className="pp-wrap">
+      <img src={pp} alt="profile" style={{width:size, height:size}} />
     </div>
-  );
-};
-
-export default ProfilePic;
+  )
+}

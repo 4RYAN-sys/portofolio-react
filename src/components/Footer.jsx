@@ -1,12 +1,13 @@
-import React from "react";
-import "../styles/Footer.css";
+import React from 'react'
+import '../styles/Footer.css'
 
-const Footer = () => {
+export default function Footer(){
   return (
     <footer className="footer">
-      <p>© {new Date().getFullYear()} Aryan P.S. All Rights Reserved.</p>
+      <div className="container footer-inner">
+        <div>© {new Date().getFullYear()} A.P.S — crafted with focus.</div>
+        <div className="social small">Made with ❤️ </div>
+      </div>
     </footer>
-  );
-};
-
-export default Footer;
+  )
+}

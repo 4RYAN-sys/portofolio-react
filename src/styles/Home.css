@@ -1,41 +1,13 @@
-.page {
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #0a0a0a;
-  font-family: 'Orbitron', sans-serif;
-  padding: 2rem;
+.home-grid{
+  display:grid;grid-template-columns:1fr 160px;gap:28px;align-items:center
 }
-
-.card {
-  background: rgba(20, 20, 20, 0.9);
-  border-radius: 16px;
-  padding: 2rem 3rem;
-  max-width: 900px;
-  width: fit-content;
-  min-width: 350px;
-  text-align: center;
-  box-shadow: 0 0 20px rgba(95, 91, 255, 0.4);
-  border: 1px solid rgba(95, 91, 255, 0.2);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 0 30px rgba(95, 91, 255, 0.6);
-}
-
-.card h1 {
-  font-size: 2.5rem;
-  color: #5f5bff;
-  text-shadow: 0 0 10px #5f5bff;
-  margin-bottom: 1.5rem;
-}
-
-.card p {
-  font-size: 1.1rem;
-  color: #cfcfcf;
-  line-height: 1.6;
-  margin-bottom: 0.8rem;
+.hero{padding:28px}
+.hero h1{margin:8px 0 12px;font-size:clamp(1.6rem,3.4vw,2.4rem)}
+.cta{margin-top:18px;display:flex;gap:12px}
+.btn{padding:10px 14px;border-radius:10px;background:var(--accent);font-weight:700;color:#fff}
+.btn.ghost{background:transparent;border:1px solid rgba(255,255,255,0.06)}
+.side{display:flex;justify-content:center}
+@media (max-width:720px){
+  .home-grid{grid-template-columns:1fr;gap:18px}
+  .side{order:-1}
 }

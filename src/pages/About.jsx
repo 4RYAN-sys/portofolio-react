@@ -1,55 +1,28 @@
-import { motion } from "framer-motion";
-import "../styles/About.css";
+import React from 'react'
+import Skills from '../components/Skills'
+import '../styles/About.css'
 
-export default function About() {
+export default function About(){
   return (
-    <div className="page">
-      <motion.div
-        className="card"
-        initial={{ opacity: 0, y: 30 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.6 }}
-      >
-        <motion.h1
-          initial={{ opacity: 0, y: -20 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ delay: 0.3, duration: 0.6 }}
-        >
-          Tentang Saya
-        </motion.h1>
+    <section id="about" className="about">
+      <div className="about-inner card">
+        <h2>About me</h2>
+        <p className="small">
+         Saya suka nonton film dengar musik, dan bermain game.
+         Saya ada quote yang saya suka yaitu "As long as we are under the same sky, we should not be sad when we part,"
+        </p>
+        <div className="split">
+          <div>
+            <h4>What I do</h4>
+            <ul>
+              <li>UI/UX design</li>
+              <li>Web development</li>
 
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.5, duration: 0.5 }}
-        >
-          Saya adalah seorang manusia biasa yang sekolah di SMKN 8 MALANG jurusan RPL.
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.7, duration: 0.5 }}
-        >
-          Beberapa hal tentang saya, saya suka nonton filem, main game, dan dengar musik. Jangan Lupa Nafas.
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.9, duration: 0.5 }}
-        >
-          Saya ada Quotes yang saya suka: "“Once you’re dead, that’s it. Nothing remains. All that’s left are memories.” – Dr. Tenma
-        </motion.p>
-
-        <motion.p
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 1.1, duration: 0.5 }}
-        >
-          Tujuan saya adalah menjadi seorang programmer handal, dan menjadi manusia yang bermanfaat.
-        </motion.p>
-      </motion.div>
-    </div>
-  );
+            </ul>
+          </div>
+          <Skills />
+        </div>
+      </div>
+    </section>
+  )
 }
