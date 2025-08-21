@@ -4,9 +4,7 @@ import Footer from './components/Footer'
 import Home from './pages/Home'
 import About from './pages/About'
 import Info from './pages/Info'
-import Skills from './components/Skills'
 import './App.css'
-import SkillsPage from './pages/SkillsPage'
 
 export default function App(){
   return (
@@ -15,7 +13,6 @@ export default function App(){
       <main className="container">
         <Home />
         <About />
-        <SkillsPage />
         <Info />
       </main>
       <Footer />

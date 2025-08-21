@@ -1,39 +1,8 @@
-.skills {
-  padding: 20px;
-  margin-top: 12px;
-}
-
-.skills h3, .skills-page h2 {
-  margin: 0 0 12px 0;
-  font-weight: 700;
-  background: linear-gradient(90deg, #6a5acd, #00ffff);
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.skills-grid {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.chip {
-  display: flex;
-  align-items: center;
-  gap: 6px;
-  padding: 8px 14px;
-  border-radius: 999px;
-  font-weight: 600;
-  font-size: 14px;
-  background: rgba(255, 255, 255, 0.05);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  transition: all 0.3s ease;
-  cursor: default;
-}
-
-.chip:hover {
-  transform: translateY(-2px) scale(1.05);
-  border-color: rgba(255, 255, 255, 0.25);
-  background: linear-gradient(90deg, rgba(106, 90, 205, 0.15), rgba(0, 255, 255, 0.15));
+.skills{padding:20px;margin-top:12px}
+.skills h3{margin:0 0 12px 0}
+.skills-grid{display:flex;flex-wrap:wrap;gap:10px}
+.chip{
+  padding:8px 12px;border-radius:999px;
+  background:linear-gradient(90deg,rgba(255,255,255,0.03),rgba(255,255,255,0.02));
+  border:1px solid rgba(255,255,255,0.04);font-weight:600
 }
