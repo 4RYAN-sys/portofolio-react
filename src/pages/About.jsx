@@ -17,6 +17,7 @@ export default function About(){
             <ul>
               <li>UI/UX design</li>
               <li>Web development</li>
+              <li>School</li>
 
             </ul>
           </div>
