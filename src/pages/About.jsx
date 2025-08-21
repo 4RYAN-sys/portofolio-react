@@ -21,7 +21,6 @@ export default function About(){
 
             </ul>
           </div>
-          <Skills />
         </div>
       </div>
     </section>
